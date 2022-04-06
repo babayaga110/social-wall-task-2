@@ -269,7 +269,6 @@ nav{
     }
 }
 .social-box{
-    margin: 2.5em 0 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
