@@ -84,6 +84,10 @@ nav{
     }
 }
 
+/* -----------------------
+    Hero Section
+----------------------- */
+
 .hero{
     height: 250px;
     background-image: url("https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1334&q=80");
@@ -105,15 +109,65 @@ nav{
     font-size: 1.5rem;
     color: #ec5f02;
 }
+.social-container{
+    margin-bottom: 3em;
+}
+.social-container,
+.social-list{
+    display: flex;
+}
+.social-container h3{
+    flex-basis: 50%;
+}
+.social-list{
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+.social-list .social-items{
+    margin-left: 1em;
+}
+.social-title{
+    margin-top:0.25em;
+    font-size: 1.2rem !important;
+}
+.social-link{
+    margin: 0;
+    font-size: 30px;
+}
+.hashtag{
+    color: #ec5f02;
+}
+.fa-twitter-square{
+    color: rgb(29,155,240);
+}
+.fa-youtube{
+    color: rgb(255,0,0);
+}
+.fa-xing{
+    color: rgb(183,223,75);
+}
+.fa-linkedin{
+    color: rgb(10,102,194);
+}
+.fa-tiktok{
+    color: rgb(5,5,16);
+}
+
+/* ----------------------
+    Card Layout
+----------------------- */
+
 .card-container{
-    width: 80vw;
+    width: 85vw;
     height: 100%;
     margin: 2em auto;
 }
 .card-section{
-    -webkit-column-count: 4;
-    -moz-column-count:4;
-    column-count: 4;
+    -webkit-column-count: 5;
+    -moz-column-count:5;
+    column-count: 5;
     -webkit-column-gap: 1em;
     -moz-column-gap: 1em;
     column-gap: 1em;
@@ -155,6 +209,15 @@ nav{
         -webkit-column-count: 1;
         column-count: 1;
     }
+    .social-container{
+        flex-direction: column;
+    }
+    .social-link{
+        font-size: 10px;
+    }
+    .social-title{
+        font-size: 0.75rem !important;
+    }
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px){
@@ -162,6 +225,15 @@ nav{
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
+    }
+    .social-container{
+        flex-direction: column;
+    }
+    .social-list{
+        margin:  0 auto;
+    }
+    .social-link{
+        font-size: 20px;
     }
     .social-box{
         flex-wrap: wrap;
@@ -173,11 +245,13 @@ nav{
     .avatar{
         margin-bottom: 1em;
     }
-    .fa-facebook-square,
-    .fa-instagram-square{
+    .card-icon{
         margin-top: 0.5em;
         margin-right: auto !important;
         margin-left: auto !important;
+    }
+    .social-title{
+        font-size: 1rem !important;
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px){
@@ -189,9 +263,9 @@ nav{
 }
 @media only screen and (min-width: 1201px) {
     .card-section {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count:  5 ;
     }
 }
 .social-box{
@@ -221,8 +295,7 @@ nav{
     color: gray;
 }
 
-.fa-facebook-square, 
-.fa-instagram-square{
+.card-icon{
     margin-left: auto;
     margin-right: 0;
     font-size: 30px;
