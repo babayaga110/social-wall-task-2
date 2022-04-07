@@ -12,7 +12,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.navbar{
+#navbar{
     padding-top: 1em;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.12);
 }
@@ -116,7 +116,7 @@ nav{
 .social-list{
     display: flex;
 }
-.social-container h3{
+.social-container h4{
     flex-basis: 50%;
 }
 .social-list{
@@ -197,7 +197,7 @@ nav{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.card-body{
+#card-body{
     font-size: 0.9rem;
     padding: 0 1.5em 1em;
 }
@@ -304,4 +304,14 @@ nav{
 }
 .fa-instagram-square{
     color: rgb(163,83,166);
+}
+
+#post-btn{
+    background-color: rgb(200,0,0);
+    padding: 1 2em;
+    border: none;
+    box-shadow: none;
+}
+button:hover{
+    box-shadow: none !important;
 }
