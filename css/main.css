@@ -307,13 +307,3 @@ nav{
 .fa-instagram-square{
     color: rgb(163,83,166);
 }
-
-#post-btn{
-    background-color: rgb(200,0,0);
-    padding: 1 2em;
-    border: none;
-    box-shadow: none;
-}
-button:hover{
-    box-shadow: none !important;
-}
